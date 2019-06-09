@@ -12,3 +12,10 @@ https://workshop.chromeexperiments.com/examples/gui/#9--Updating-the-Display-Aut
 Clone to your computer and run index.html
 
 then press 'h' on keyboard to see menu
+
+# Notes
+I could not figure out so far on how to use the matrix with dat.gui:
+
+myMatrix = DatGuiMatrix(string label, int numButtons, bool showLabels = false)
+
+DatGuiMatrix* myMatrix = DatGuiMatrix("MATRIX", 15, true)
