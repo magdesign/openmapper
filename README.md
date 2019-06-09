@@ -1,5 +1,9 @@
-This is a sidechain for openmapper stuff.
-I show here things I was able to code in JavaScript but not in Typescript, so Jan has to rewrite into typescript.
+This is a sidechain sketchboard for openmapper stuff.
+
+
+#Since I dont get the Typescript stuff, I write here the JavaScript solution and Jan or someone has to rewrite it into typescript.
+
+In the version on gitlab, we had the problem that dat.gui could not be hidden by default, here I made the solution where it is hidden by default.
 
 ## Usage
 Clone to your computer and run index.html
