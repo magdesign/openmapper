@@ -2,20 +2,15 @@
   // The next few lines sets the intit values for all GUI content
 
     let obj = {
-        Outlines: false,
-        Cutter: false,
+        "Outlines (o)": false,
+        "Cutter (c)": false,
 
         Speed: 100,
-        //Speed: min(-100).max(200).step(1);
-
-        height: 10,
-        Position: 0,
-  
         Source: 'Video',
         Location: 'any',
 
         addQuad: function () {
-          alert('Bang!');
+          alert('Bang, here is your quad!');
         },
         addCircle: function () {
         },
@@ -33,8 +28,8 @@
     //First folder of GUI
     let f1 = gui.addFolder('View');
 
-    f1.add(obj, 'Outlines');
-    f1.add(obj, 'Cutter');
+    f1.add(obj, 'Outlines (o)');
+    f1.add(obj, 'Cutter (c)');
     //let the folder be open:
     f1.open();
 
