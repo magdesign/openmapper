@@ -5,6 +5,9 @@ This is a sidechain sketchboard for openmapper stuff.
 
 In the version on gitlab, we had the problem that dat.gui could not be hidden by default, here I made the solution where it is hidden by default.
 
+To display the position state, use see here for updating menu:
+https://workshop.chromeexperiments.com/examples/gui/#9--Updating-the-Display-Automatically
+
 ## Usage
 Clone to your computer and run index.html
 
