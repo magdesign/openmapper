@@ -1,0 +1,21 @@
+{
+  "name": "openmapper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install:all": "cd backend && npm install && cd ../client && npm install",
+    "test:all": "cd backend && npm run test && cd ../client && npm run test",
+    "build": "cd backend && npm run build && cd ../client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/Jaun1011/openmapper.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/Jaun1011/openmapper/issues"
+  },
+  "homepage": "https://gitlab.com/Jaun1011/openmapper#readme"
+}

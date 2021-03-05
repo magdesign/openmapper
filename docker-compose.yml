@@ -1,0 +1,41 @@
+version: '3.5'
+
+services:
+  openmapper-client:
+    image: openmapper/openmapper-client
+    build: ./client
+    restart: always
+    container_name: openmapper-client
+
+    networks: 
+      - traefik
+
+    labels:
+      traefik.enable: true
+      traefik.docker.network: "traefik"
+      traefik.frontend.rule: "Host:openmapper.dev"
+
+    expose:
+      - 80
+
+  openmapper-backend:
+    image: openmapper/openmapper-backend
+    build: ./client
+    restart: always
+    container_name: openmapper-client
+
+    networks: 
+      - traefik
+
+    labels:
+      traefik.enable: true
+      traefik.docker.network: "traefik"
+      traefik.frontend.rule: "Host:openmapper.dev/api"
+
+    expose:
+      - 80
+
+networks: 
+  traefik:
+    external: false
+    name: traefik
